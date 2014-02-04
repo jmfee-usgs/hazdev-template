@@ -19,6 +19,13 @@ $spacing: 8px !default;
 	.row {
 		clear:both;
 
+		// add clear fix
+		&:after {
+			display: block;
+			content: ' ';
+			clear: both;
+		}
+
 		> .column {
 			float:left;
 
